@@ -536,55 +536,58 @@
         </section>
 
        
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 md:py-24 bg-gray-50">
-            <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title mx-auto">Get in Touch</h2>
-                <div class="bg-white p-8 md:p-12 rounded-xl card-shadow">
-                    <p class="text-lg text-gray-700 text-center mb-8">
-                        Have a project in mind or just want to say hello? Feel free to reach out!
-                    </p>
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 text-sm font-semibold mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="contact-input" placeholder="Your Name" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="contact-input" placeholder="your.email@example.com" required>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 text-sm font-semibold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="6" class="contact-input resize-y" placeholder="Tell me about your project or inquiry..." required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn-primary">Send Message</button>
-                        </div>
-                    </form>
-                    <div id="form-message" class="mt-6 text-center text-sm font-medium hidden"></div>
-                </div>
+  <!-- Contact Section -->
+<section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-lg card-shadow">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title mx-auto">Get in Touch</h2>
+        <div class="bg-white p-8 md:p-12 rounded-xl card-shadow">
+            <p class="text-lg text-gray-700 text-center mb-8">
+                Have a project in mind or just want to say hello? Feel free to reach out!
+            </p>
+            
+            <div class="flex justify-center space-x-6 text-2xl">
+                <!-- OnlineJobs.ph Link -->
+                <a href="https://www.onlinejobs.ph/jobseekers/info/2145690" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-blue-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.5 17h-3.5v-10h3.5v10zm1.75-8.5c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm5.75 8.5h-3.5v-5.604c0-3.368-4-3.113-4 0v5.604h-3.5v-10h3.5v1.765c1.396-2.586 7-2.777 7 2.476v5.759z"/>
+                    </svg>
+                </a>
+                <!-- GitHub Link -->
+                <a href="https://github.com/Reyel-boop" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-gray-700 transition-colors duration-300">
+                    <svg class="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.68-.207.68-.465 0-.233-.009-.85-.015-1.674-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.107-1.462-1.107-1.462-.907-.62.068-.608.068-.608 1.007.07 1.532 1.033 1.532 1.033.89 1.529 2.336 1.088 2.903.832.09-.646.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.651 0 0 .84-.27 2.75 1.025.79-.22 1.62-.33 2.45-.33.83 0 1.66.11 2.45.33 1.91-1.295 2.75-1.025 2.75-1.025.546 1.38.203 2.398.098 2.651.64.698 1.029 1.592 1.029 2.682 0 3.842-2.339 4.686-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .259.207.556.688.459C21.137 20.188 24 16.43 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"/></svg>
+                </a>
+                <!-- Gmail Link - Remember to replace 'your.email@example.com' with your actual email address -->
+                <a href="mailto:your.email@example.com" class="social-icon hover:text-red-600 transition-colors duration-300">
+                    <svg class="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.003 5.884L10 11l8-5.116C17.927 5.397 16.05 5 14 5H4c-1.104 0-2 .896-2 2v10c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2V7c0-1.104-.896-2-2-2h-14c-.003-.002-.006-.003-.009-.005L2.003 5.884zM22 7v10c0 1.104-.896 2-2 2H4c-1.104 0-2-.896-2-2V7c0-1.104.896-2 2-2h16c1.104 0 2 .896 2 2zM2 7v10l8 5 8-5V7l-8 5-8-5z"/></svg>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 mt-12 w-full">
     <div class="container mx-auto px-4 text-center">
-        <p class="mb-4">&copy; <span id="current-year"></span> myportfolio. All rights reserved.</p>
+        <p class="mb-4">&copy; <span id="current-year"></span> Jhon Reyel Jimenez. All rights reserved.</p>
         <div class="flex justify-center space-x-6 text-2xl">
-            <a href="https://www.onlinejobs.ph/jobseekers/info/2145690" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-blue-400">
+            <!-- OnlineJobs.ph Link in Footer -->
+            <a href="https://www.onlinejobs.ph/jobseekers/info/2145690" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-blue-400 transition-colors duration-300">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.5 17h-3.5v-10h3.5v10zm1.75-8.5c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm5.75 8.5h-3.5v-5.604c0-3.368-4-3.113-4 0v5.604h-3.5v-10h3.5v1.765c1.396-2.586 7-2.777 7 2.476v5.759z"/>
                 </svg>
             </a>
-            <a href="https://github.com/Reyel-boop" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-gray-400">
+            <!-- GitHub Link in Footer -->
+            <a href="https://github.com/Reyel-boop" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-gray-400 transition-colors duration-300">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.68-.207.68-.465 0-.233-.009-.85-.015-1.674-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.107-1.462-1.107-1.462-.907-.62.068-.608.068-.608 1.007.07 1.532 1.033 1.532 1.033.89 1.529 2.336 1.088 2.903.832.09-.646.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.651 0 0 .84-.27 2.75 1.025.79-.22 1.62-.33 2.45-.33.83 0 1.66.11 2.45.33 1.91-1.295 2.75-1.025 2.75-1.025.546 1.38.203 2.398.098 2.651.64.698 1.029 1.592 1.029 2.682 0 3.842-2.339 4.686-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .259.207.556.688.459C21.137 20.188 24 16.43 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"/></svg>
             </a>
-            <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="social-icon hover:text-red-400">
+            <!-- Gmail Link in Footer -->
+            <a href="mailto:your.email@example.com" class="social-icon hover:text-red-400 transition-colors duration-300">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.003 5.884L10 11l8-5.116C17.927 5.397 16.05 5 14 5H4c-1.104 0-2 .896-2 2v10c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2V7c0-1.104-.896-2-2-2h-14c-.003-.002-.006-.003-.009-.005L2.003 5.884zM22 7v10c0 1.104-.896 2-2 2H4c-1.104 0-2-.896-2-2V7c0-1.104.896-2 2-2h16c1.104 0 2 .896 2 2zM2 7v10l8 5 8-5V7l-8 5-8-5z"/></svg>
             </a>
         </div>
     </div>
+</footer>
+
 </footer>
 <script>
     // JavaScript to set the current year dynamically
