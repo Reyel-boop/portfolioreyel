@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Reyel Jimenez - Professional Summary</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Digital Storyteller, Visual Creator, Web Weaver</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Dark slate text */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #818cf8; /* Indigo */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1; /* Darker Indigo */
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%;
+            height: 4px;
+            background-color: #6366f1; /* Indigo */
+            border-radius: 2px;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Indigo to Violet */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .skill-item {
+            background-color: #e0e7ff; /* Light indigo */
+            color: #4338ca; /* Darker indigo */
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out;
+        }
+        .skill-item:hover {
+            transform: translateY(-3px);
+            background-color: #c7d2fe; /* Even lighter indigo */
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(99, 102, 241, 0.9); /* Indigo with transparency */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 1rem;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        .contact-input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e1; /* Light gray border */
+            background-color: #f8fafc; /* Lighter background for inputs */
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .contact-input:focus {
+            outline: none;
+            border-color: #6366f1; /* Indigo on focus */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Light indigo shadow */
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Indigo to Violet */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .social-icon {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .social-icon:hover {
+            transform: translateY(-3px) scale(1.1);
+            color: #6366f1; /* Indigo */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">portfolio</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Skills</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8 text-xl">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <a href="#about" class="text-gray-800 hover:text-indigo-600 font-semibold transition duration-300" onclick="hideMobileMenu()">About</a>
+            <a href="#skills" class="text-gray-800 hover:text-indigo-600 font-semibold transition duration-300" onclick="hideMobileMenu()">Skills</a>
+            <a href="#portfolio" class="text-gray-800 hover:text-indigo-600 font-semibold transition duration-300" onclick="hideMobileMenu()">Portfolio</a>
+            <a href="#contact" class="text-gray-800 hover:text-indigo-600 font-semibold transition duration-300" onclick="hideMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <!-- Abstract SVG pattern for background -->
+                <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.2"></path>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)"></rect>
+                </svg>
+            </div>
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <img src="https://placehold.co/128x128/6366f1/ffffff?text=JR" alt="Your Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Hi, I'm <span class="gradient-text-white">Your Friend! </span>
+                </h1>
+                <p class="text-xl md:text-2xl font-light mb-8">
+                    Digital Storyteller | Visual Creator | Web Weaver
+                </p>
+                <a href="#portfolio" class="btn-primary inline-block">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 section-title">About Me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="text-lg leading-relaxed text-gray-700">
+                       <p style="text-align: justify; margin-bottom: 1rem;">
+    I am Jhon Reyel Jimenez hailing from Panabo, Davao del Norte, Philippines, I am a highly versatile professional with a Bachelor of Science in Information Technology, poised to excel in the Virtual Assistant world. My expertise spans web development (HTML5, JavaScript, Responsive Design, WordPress), UI/UX design, and social media management, complemented by strong communication and customer service skills honed as an Appointment Setter, Cold Caller, and CSR.
+</p>
+<p style="text-align: justify; margin-bottom: 1rem;">
+    As a dedicated teacher, I bring a unique blend of technical proficiency and pedagogical insight, making me adept at simplifying complex concepts and fostering engaging interactions. I am passionate about leveraging technology to drive results, build strong communities, and provide exceptional support to clients seeking a dynamic and skilled virtual assistant.
+</p>
+
+                    </div>
+                    <div class="relative w-full h-64 md:h-96 rounded-xl overflow-hidden card-shadow">
+                        <img src="images/me.jpeg" alt="About Me" class="w-full h-full object-cover">
+                         <div class="absolute inset-0 bg-indigo-500 opacity-20 rounded-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+       <section id="skills" class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title mx-auto">My Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <span class="skill-item" data-description="Scheduling and confirming appointments for clients or sales teams.">Appointment Setter</span>
+            <span class="skill-item" data-description="Managing and executing social media strategies to enhance online presence.">Social Media Management</span>
+            <span class="skill-item" data-description="Fostering interaction and building relationships within online communities.">Community Engagement</span>
+            <span class="skill-item" data-description="Initiating contact with potential customers by phone to generate leads or sales.">Cold Calling</span>
+            <span class="skill-item" data-description="Proficient in image editing, manipulation, and graphic design using Adobe Photoshop.">Adobe Photoshop</span>
+              <span class="skill-item" data-description="Providing support and assistance to customers regarding products or services.">Customer Service Representative</span>
+            <span class="skill-item" data-description="Designing intuitive and engaging user interfaces and experiences for websites/apps.">UI/UX Design</span>
+            <span class="skill-item" data-description="Expert in structuring content for web pages using the latest HTML standard.">HTML5</span>
+            <span class="skill-item" data-description="Proficient in programming interactive web experiences.">JavaScript</span>
+                 <span class="skill-item" data-description="Designing and developing websites that adapt seamlessly to various devices and screen sizes.">Responsive Design</span>
+            <span class="skill-item" data-description="Building and managing websites using the WordPress content management system.">WordPress</span>
+            <span class="skill-item" data-description="Actively engaging with social media content and communities.">Social Media Engager</span>
+            <span class="skill-item" data-description="Developing and maintaining websites and web applications.">Web Developer</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Basic styling for the skill items and tooltip */
+    .skill-item {
+        background-color: #e2e8f0; /* Light gray background, adjust if needed */
+        color: #2d3748; /* Dark text color, adjust if needed */
+        padding: 0.5rem 1rem;
+        border-radius: 9999px; /* Pill shape */
+        font-weight: 500;
+        cursor: help; /* Indicates interactivity */
+        position: relative; /* For tooltip positioning */
+        display: inline-block; /* Ensures proper sizing */
+    }
+
+    .skill-item:hover {
+        /* No color change on hover as per your request, but you can add subtle effects if desired */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow on hover */
+    }
+
+    /* Tooltip styling */
+    .skill-tooltip {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 125%; /* Position above the skill item */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333; /* Dark background for tooltip */
+        color: #fff; /* White text for tooltip */
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.375rem; /* Rounded corners */
+        white-space: nowrap; /* Keep text on one line */
+        font-size: 0.875rem; /* Smaller font size */
+        z-index: 10; /* Ensure it's above other content */
+        transition: opacity 0.3s, visibility 0.3s;
+        pointer-events: none; /* Allows clicks through the tooltip to elements below */
+    }
+
+    .skill-item:hover .skill-tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Arrow for the tooltip */
+    .skill-tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const skillItems = document.querySelectorAll('.skill-item');
+
+        skillItems.forEach(item => {
+            const description = item.getAttribute('data-description');
+            if (description) {
+                const tooltip = document.createElement('div');
+
+                tooltip.classList.add('skill-tooltip');
+                tooltip.textContent = description;
+                item.appendChild(tooltip);
+            }
+        });
+    });
+</script>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title">Portfolio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1: Media Engagement Campaign -->
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+                        <img src="images/ES.png" alt="Media Engagement Campaign" class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">School Enrollment System</h3>
+                            <p class="text-gray-600 text-sm">SVNHS Enrollment System seeks to provide a smoother, more convenient, and organized enrollment experience for its students and staff, especially in light of evolving educational guidelines and the increasing adoption of digital solutions.</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="text-2xl font-bold mb-2">Enrollment System</h3>
+                            <p class="text-sm mb-4">Strategy, Content Creation, Analytics</p>
+                            <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2: Graphic Design Project -->
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+                        <img src="images/as.png" alt="Brand Identity Design" class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Appointment Setter </h3>
+                            <p class="text-gray-600 text-sm">Created a fresh and modern brand identity for a local startup, including logo and style guide.</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="text-2xl font-bold mb-2">Appointment Setter </h3>
+                            <p class="text-sm mb-4">Scheduler, Connector, Qualifier</p>
+                            <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3: Web Development Project -->
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+                        <img src="images/ecommerce.png" alt="Responsive Website Development" class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Website</h3>
+                            <p class="text-gray-600 text-sm">Developed a fully responsive e-commerce website using React and Tailwind CSS.</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="text-2xl font-bold mb-2">E-commerce Site</h3>
+                            <p class="text-sm mb-4">React, Tailwind CSS, Responsive Design</p>
+                            <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+                        </div>
+                    </div>
+
+                    <!-- Add more portfolio items as needed -->
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+    <img src="images/infographic.jpg" alt="Infographic Design" class="w-full h-48 object-cover rounded-t-xl">
+    <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Visualization Infographic</h3>
+        <p class="text-gray-600 text-sm">Designed an engaging infographic to present complex data in an easy-to-understand format.</p>
+    </div>
+    <div class="portfolio-overlay">
+        <h3 class="text-2xl font-bold mb-2">Infographic</h3>
+        <p class="text-sm mb-4">Data Storytelling, Visual Hierarchy</p>
+        <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+    </div>
+</div>
+
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+                        <img src="https://placehold.co/400x300/d8b4fe/ffffff?text=SMM" alt="SMM" class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media Manager | Engager </h3>
+                            <p class="text-gray-600 text-sm">Responsible for creating and scheduling engaging content across various social media platforms. Their role involves interacting with the audience, building community, and analyzing performance to optimize online presence and achieve marketing goals.</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="text-2xl font-bold mb-2">Social Media Manager</h3>
+                            <p class="text-sm mb-4">Content, Engage, Analyze.</p>
+                            <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item bg-gray-100 card-shadow">
+                        <img src="images/landingpage.png" alt="Landing Page Design" class="w-full h-48 object-cover rounded-t-xl">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">High-Converting Landing Page</h3>
+                            <p class="text-gray-600 text-sm">Designed and coded a responsive landing page focused on lead generation.</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3 class="text-2xl font-bold mb-2">Landing Page</h3>
+                            <p class="text-sm mb-4">UI/UX, HTML/CSS, Conversion Optimization</p>
+                            <a href="#contact" class="text-white border border-white px-4 py-2 rounded-full text-sm hover:bg-white hover:text-indigo-600 transition duration-300">Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+            <!-- Work Experience section-->
+           <section id="experience" class="py-16 md:py-24 bg-gray-50 font-sans">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-16 relative">
+            Professional Experience
+            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-32 h-1 bg-indigo-600 rounded-full"></span>
+        </h2>
+
+        <div class="space-y-12">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 overflow-hidden">
+    <img class="h-48 w-full object-cover md:w-48 rounded-l-xl md:rounded-l-none md:rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105" src="images/reyel.png" alt="Graphic Design Role">
+</div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold text-gray-900">ICT Teacher</h3>
+                            <span class="text-md text-gray-600 font-medium">Panabo City, Philippines</span>
+                        </div>
+                        <p class="text-lg text-indigo-700 font-semibold mb-4">2018 - Present</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                            <li>Dedicated to empowering students with essential digital literacy and technological skills in both private (Panabo Faith Mission Academy, 2018-2020) and public school settings.</li>
+                            <li>Specialized in teaching computer subjects, animation, and Computer Systems Servicing.</li>
+                            <li>Committed to integrating and innovating with technology for the benefit of students, the school, and the local community.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 overflow-hidden">
+    <img class="h-48 w-full object-cover md:w-48 rounded-l-xl md:rounded-l-none md:rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105" src="images/graphic-design.png" alt="Graphic Design Role">
+</div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold text-gray-900">Freelance Graphic Artist</h3>
+                            <span class="text-md text-gray-600 font-medium">Remote/Panabo City</span>
+                        </div>
+                        <p class="text-lg text-indigo-700 font-semibold mb-4">Ongoing</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                            <li>Craft compelling visual designs for various school-related purposes, including marketing materials for school expos and events.</li>
+                            <li>Specialized in creating impactful visuals that effectively promote and commemorate significant school activities such as graduations and other special occasions.</li>
+                            <li>Collaborate with educational institutions to enhance their visual communication and outreach efforts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                <div class="md:flex">
+                  <div class="md:flex-shrink-0 overflow-hidden">
+    <img class="h-48 w-full object-cover md:w-48 rounded-l-xl md:rounded-l-none md:rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105" src="images/coding.png" alt="Graphic Design Role">
+</div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold text-gray-900">Beginner Web Developer</h3>
+                            <span class="text-md text-gray-600 font-medium">Remote/Panabo City</span>
+                        </div>
+                        <p class="text-lg text-indigo-700 font-semibold mb-4">Ongoing</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                            <li>Craft compelling visual designs for various school-related purposes, including marketing materials for school expos and events.</li>
+                            <li>Specialized in creating impactful visuals that effectively promote and commemorate significant school activities such as graduations and other special occasions.</li>
+                            <li>Collaborate with educational institutions to enhance their visual communication and outreach efforts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 overflow-hidden">
+    <img class="h-48 w-full object-cover md:w-48 rounded-l-xl md:rounded-l-none md:rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105" src="images/coldcalling.jpeg" alt="Graphic Design Role">
+</div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h5 class="text-2xl font-bold text-gray-900">CSR | Back Office Staff</h5>
+                            <span class="text-md text-gray-600 font-medium">Remote/ Davao City</span>
+                        </div>
+                        <p class="text-lg text-indigo-700 font-semibold mb-4">2020-2023</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                            <li>As a Back Office Staff at Awesome OS, I remotely managed product listings and online item sorting for clients like Honey/PayPal.</li>
+                            <li>I also handled Customer Service Representative duties, effectively resolving customer concerns and ensuring client satisfaction.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                <div class="md:flex">
+                   <div class="md:flex-shrink-0 overflow-hidden">
+    <img class="h-40 w-full object-cover md:w-40 rounded-l-xl md:rounded-l-none md:rounded-t-xl transition-transform duration-300 ease-in-out hover:scale-105" src="images/call-center.png" alt="Graphic Design Role">
+</div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-2">
+                            <h5 class="text-2xl font-bold text-gray-900">Cold Caller</h5>
+                            <span class="text-md text-gray-600 font-medium">Remote/ Panabo City</span>
+                        </div>
+                        <p class="text-lg text-indigo-700 font-semibold mb-4">2020-2023</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                            <li>As a Remote Cold Caller for Legacy Rebuilder Properties, I specialized in proactive outreach to identify potential real estate leads.</li>
+                            <li>My role involved initiating contact with prospective clients to gauge their interest and qualify opportunities. </li>
+                             <li> I effectively communicated property value propositions to build a strong pipeline for the sales team.</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+                   
+                   
+
+
+               </div>
+            </div>
+        </section>
+
+       
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center section-title mx-auto">Get in Touch</h2>
+                <div class="bg-white p-8 md:p-12 rounded-xl card-shadow">
+                    <p class="text-lg text-gray-700 text-center mb-8">
+                        Have a project in mind or just want to say hello? Feel free to reach out!
+                    </p>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="contact-input" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="contact-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="6" class="contact-input resize-y" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="form-message" class="mt-6 text-center text-sm font-medium hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+        <p class="mb-4">&copy; <span id="current-year"></span> myportfolio. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 text-2xl">
+            <a href="https://www.onlinejobs.ph/jobseekers/info/2145690" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-blue-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.5 17h-3.5v-10h3.5v10zm1.75-8.5c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm5.75 8.5h-3.5v-5.604c0-3.368-4-3.113-4 0v5.604h-3.5v-10h3.5v1.765c1.396-2.586 7-2.777 7 2.476v5.759z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/Reyel-boop" target="_blank" rel="noopener noreferrer" class="social-icon hover:text-gray-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.68-.207.68-.465 0-.233-.009-.85-.015-1.674-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.107-1.462-1.107-1.462-.907-.62.068-.608.068-.608 1.007.07 1.532 1.033 1.532 1.033.89 1.529 2.336 1.088 2.903.832.09-.646.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.651 0 0 .84-.27 2.75 1.025.79-.22 1.62-.33 2.45-.33.83 0 1.66.11 2.45.33 1.91-1.295 2.75-1.025 2.75-1.025.546 1.38.203 2.398.098 2.651.64.698 1.029 1.592 1.029 2.682 0 3.842-2.339 4.686-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .259.207.556.688.459C21.137 20.188 24 16.43 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="social-icon hover:text-red-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.003 5.884L10 11l8-5.116C17.927 5.397 16.05 5 14 5H4c-1.104 0-2 .896-2 2v10c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2V7c0-1.104-.896-2-2-2h-14c-.003-.002-.006-.003-.009-.005L2.003 5.884zM22 7v10c0 1.104-.896 2-2 2H4c-1.104 0-2-.896-2-2V7c0-1.104.896-2 2-2h16c1.104 0 2 .896 2 2zM2 7v10l8 5 8-5V7l-8 5-8-5z"/></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    // JavaScript to set the current year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        function showMobileMenu() {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        }
+
+        function hideMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        mobileMenuButton.addEventListener('click', showMobileMenu);
+        closeMobileMenuButton.addEventListener('click', hideMobileMenu);
+
+        // Hide mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', hideMobileMenu);
+        });
+
+        // Form submission handling (basic example, no backend)
+        const contactForm = document.querySelector('#contact form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            formMessage.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            formMessage.classList.add('text-gray-600');
+            formMessage.textContent = 'Sending message...';
+
+            // Simulate API call
+            setTimeout(() => {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (name && email && message) {
+                    formMessage.classList.remove('text-gray-600');
+                    formMessage.classList.add('text-green-600');
+                    formMessage.textContent = 'Message sent successfully! I will get back to you soon.';
+                    contactForm.reset(); // Clear the form
+                } else {
+                    formMessage.classList.remove('text-gray-600');
+                    formMessage.classList.add('text-red-600');
+                    formMessage.textContent = 'Please fill in all fields.';
+                }
+                formMessage.classList.remove('hidden');
+            }, 1500); // Simulate network delay
+        });
+
+        // Smooth gradient text for hero section (optional, if you want a subtle animation)
+        // You can add more complex JS animations here if desired.
+        // For now, the gradient is purely CSS.
+    </script>
+</body>
+</html>
